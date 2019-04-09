@@ -35,7 +35,24 @@ $ python manage.py runserver
 
 ## USE
 
+###  Tùy chỉnh manager mặc định
 
+```bash
+$ python manage.py shell
+>>> from blog.models import Post
+>>> Post.public.all()
+>>> Post.public.filter(title="Hoc Django")
+
+```
+
+### Thêm phương thức manager
+
+```bash
+$ python manage.py shell
+>>> Post.public.title_count('django')
+>>> Post.public.title_count('model')
+
+```
 
 
 

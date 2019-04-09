@@ -1,3 +1,4 @@
+# blog/models.py
 from django.db import models
 
 class PublicManager(models.Manager):
@@ -5,6 +6,9 @@ class PublicManager(models.Manager):
 		return super(PublicManager,
 			self).get_queryset()\
 		.filter(status="public")
+
+	def title_count(self, keyword): # NEW
+		return self.filter(title__icontains=keyword).count()
 
 class Post(models.Model):
 	STATUS_CHOICES = (
@@ -20,7 +24,7 @@ class Post(models.Model):
 		default = 'public'
 	)
 
-	objects = Manager()
+	objects = models.Manager()
 	public = PublicManager()
 
 	def __str__(self):
