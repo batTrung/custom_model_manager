@@ -1,13 +1,13 @@
-# 
+# Tùy chỉnh Model Manager trong Django 
 
-<a target="_blank" href=""><img src="" alt="" /></a>
+<a target="_blank" href="https://www.djangobat.com/blog/tuy-chinh-model-manager-trong-django/"><img src="https://www.djangobat.com/media/posts/2019/04/09/model.jpg" alt="" /></a>
 
 
 ## BLOG djangobat
 
 [https://www.djangobat.com/](https://www.djangobat.com/)
 
-## Cài đặt
+## setting
 
 Đầu tiên, tải repository về máy tính:
 
@@ -18,7 +18,7 @@ $ git clone
 Cài đặt requirements:
 
 ```bash
-$ cd answerly
+$ cd custom_model_manager
 $ pip install -r requirements.txt
 ```
 
@@ -33,7 +33,9 @@ Chạy development server
 $ python manage.py runserver
 ```
 
-Mở Chrome hay FireFox : **127.0.0.1:8000**
+## USE
+
+
 
 
 
